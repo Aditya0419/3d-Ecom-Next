@@ -1,6 +1,6 @@
-import ProductCard from '@/components/ProductCard.jsx';
+import ProductCard from '../../components/ProductCard';
 
-export default function Home() {
+export default function Products() {
   const products = [
     { id: 1, title: 'Product 1', price: 29.99, image: 'https://via.placeholder.com/150' },
     { id: 2, title: 'Product 2', price: 19.99, image: 'https://via.placeholder.com/150' },
@@ -8,9 +8,9 @@ export default function Home() {
   ];
 
   return (
-    <div className='home'>
-      <h1>Welcome to BrandName</h1>
-      <div className='productList'>
+    <div>
+      <h1>All Products</h1>
+      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
