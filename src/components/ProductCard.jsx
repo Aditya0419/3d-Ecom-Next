@@ -7,7 +7,7 @@ const ProductCard = ({ product }) => {
       <h2>{product.title}</h2>
       <p>${product.price}</p>
       <Link href={`/product/${product.id}`}>
-        View Details
+        View 
       </Link>
     </div>
   );
