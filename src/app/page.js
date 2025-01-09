@@ -1,4 +1,5 @@
 import ProductCard from '@/components/ProductCard.jsx';
+import Hero from '@/components/Hero';
 
 export default function Home() {
   const products = [
@@ -9,6 +10,7 @@ export default function Home() {
 
   return (
     <div className='home'>
+      <Hero />
       <h1>Welcome to BrandName</h1>
       <div className='productList'>
         {products.map((product) => (
