@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { IoMdSearch } from 'react-icons/io';
+import logo from '@/assets/logo.png'
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('')
@@ -31,7 +32,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between bg-gray-800 bg-opacity-90 px-6 py-4 text-white shadow-md">
       {/* Left: Logo */}
       <div className="text-2xl font-bold cursor-pointer">
-        <a href="/">BrandName</a>
+        <a href="/"><img src={logo} alt="asd" /></a>
       </div>
 
       {/* Right: Search Bar, Account, and Cart Icons */}
